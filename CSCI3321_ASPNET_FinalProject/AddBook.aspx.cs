@@ -18,7 +18,7 @@ namespace CSCI3321_ASPNET_FinalProject
         protected void btnBookSubmit_Click(object sender, EventArgs e)
         {
             string commandText = "INSERT INTO Books VALUES ('" + txtTitle.Text + "', " 
-                + ddlAuthor.SelectedValue + ", " + txtPrice.Text + ", '" + Convert.ToDateTime(txtPublishDate.Text) 
+                + ddlAuthor.SelectedValue + ", " + txtPrice.Text + ", '" + txtPublishDate.Text
                 + "', " + ddlPublisher.SelectedValue + ", " + ddlGenre.SelectedValue + ", " 
                 + txtWordCount.Text + ")";
             SQLquery.RunQuery(commandText);
