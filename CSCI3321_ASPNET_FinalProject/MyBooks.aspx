@@ -11,7 +11,6 @@
             <asp:TableHeaderCell>Publish Date</asp:TableHeaderCell>
             <asp:TableHeaderCell>Publisher</asp:TableHeaderCell>
             <asp:TableHeaderCell>Genre</asp:TableHeaderCell>
-            <asp:TableHeaderCell>Word Count</asp:TableHeaderCell>
         </asp:TableHeaderRow>
     </asp:Table>
 

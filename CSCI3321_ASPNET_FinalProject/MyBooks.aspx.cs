@@ -29,7 +29,7 @@ namespace CSCI3321_ASPNET_FinalProject
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandText = "SELECT Books.Title, Authors.FirstName, Authors.LastName, Books.Price, " +
-                "Books.PublishDate, Publishers.PublisherName, Genres.GenreName, Books.WordCount " +
+                "Books.PublishDate, Publishers.PublisherName, Genres.GenreName " +
                 "FROM (((Books " +
                 "INNER JOIN Authors ON Books.AuthorID = Authors.AuthorID)" +
                 "INNER JOIN Publishers ON Books.PublisherID = Publishers.PublisherID)" +
@@ -69,10 +69,6 @@ namespace CSCI3321_ASPNET_FinalProject
 
                     tc = new TableCell();
                     tc.Text = reader["GenreName"].ToString();
-                    tr.Cells.Add(tc);
-
-                    tc = new TableCell();
-                    tc.Text = reader["WordCount"].ToString();
                     tr.Cells.Add(tc);
 
                     tblBooks.Rows.Add(tr);
